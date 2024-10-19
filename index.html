@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havva Metin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7227c62d17.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Anasayfa</a></li> 
+                    <li><a href="#about">Hakkımda</a></li>
+                    <li><a href="#services">Projeler</a></li>
+                    <li><a href="#anket">Anket</a></li>
+                    <li><a href="#contact">İletişim </a></li>
+                    
+                
+            </nav>
+            <div class="header-text">
+                <p>Computer engineering student</p>
+                <h1> Hoş geldiniz. <br> Ben Havva Metin.</h1>
+               
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="about">
+         <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                
+                <img  src="images/Adsız tasarım (4).png" class="right-align" width="450" >
+               
+                <div class="about-col-2"></div><br><br>
+                <h1 class="sub-title"class="right-align" width="300">Hakkımda </h1><br><br>
+                <p class="right-align" width="300">Düzce üniversitesi bilgisayar mühendisliği 1.sınıf öğrencisiyim.
+                    11 haziran 2004'de Kırıkkale'de doğdum.Ankara'da yaşıyorum.Bilgisayara ilgi duyduğumu farkettikten sonra bu bölümü tercih ettim.Dİğer ilgi alanlarıma örnek vericek olursam;
+
+                </p>
+               
+                <ul>
+                    
+                        <li > Resim yapmak</li>
+                        <li >Farklı yemek ve tatlı tarifleri denemek</li> 
+                        <li >İnsan psikolojisi ile ilgili kitap ve makaleler okumak</li> 
+                        <li > Aksiyon ve dedektif tarzındaki filmleri seyretmek</li>
+                        <li > Müzik eşliğinde sakin yürüyüşler yapmak vb.</li>
+                    
+                </ul>
+                <p>
+                 Bu blog sayfası benim yapmaya çalıştığım ilk website.Hayatımdaki her ilkin güzel olması dileğiyle.Hayal ettikçe başarılı olacağız...
+                </p>
+
+            </div>
+         </div>
+    
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Projeler</h1>
+            <div class="services-list">
+<div>
+    <i class="fa-solid fa-code"></i>
+    <h2 style="font-size: 30px; font-weight: 500; margin-bottom: 15px;">Web Design </h2><br>
+    <p>Şimdilik tek projem yapmaya çalıştığım bu blog sayfasıdır.</p>
+</div> 
+
+            </div>
+        </div>
+    </div>
+   <div id="anket">
+<div class="container">
+    <h1 class="sub-title">Anket</h1>
+    <div class="anket-list">
+       <img src="images/soruiş.png"  class="right-align" width="300">
+<form name="submit-to-google-sheet" style="color: rgb(217, 239, 239);" action="/anket-sonucu" method="post">
+    
+    <label for="isim">İsim:</label><br>
+    <input type="text" placeholder="İsminizi giriniz" id="isim" name="isim" required><br><br>
+    
+    
+    <label for="soyisim">Soyisim:</label><br>
+    <input type="text"placeholder="Soyadınızı giriniz" id="soyisim" name="soyisim" required><br><br>
+    
+    
+    <label for="email">E-posta:</label><br>
+    <input type="email"  placeholder="E-posta giriniz" id="email" name="email" required><br><br>
+    
+   
+    <label for="gorusler">Bu web sayfası hakkında düşünceleriniz nelerdir?Eksik bulduğunuz bir kısım var mı?Varsa nedir?:</label><br>
+    <textarea id="gorusler" name="görüşler" rows="4" cols="50" required></textarea><br>
+
+    <button type="submit">Gönder </button>
+</form>
+<span id="msg"> </span>
+ </div>
+</div>
+
+
+ </div>
+ <br>
+ <br>
+ <br>
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+    <div class="contact-left"></div>
+     <h1 class="sub-title">İletişim</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> havvametin11@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 0555 555 55 55</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/havvametn/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/havva-metin-541870315/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+           
+        
+            
+            </div>
+        </div>
+    </div>
+<div class="copright">
+    <p> Copyright ©  Havva <i class="fa-solid fa-heart"></i></p>
+</div>
+   </div>
+   
+   <script>
+    var
+     sidemeu= document.getElementById("sidemenu");
+     function openmenu(){
+        sidemeu.style.right="0";}
+        function closemenu(){
+            sidemeu.style.right="-200px";
+     }
+   </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZ4HLPtv4OYnLNzlxzdDDjDtDzd10G0Tk_F4zHPtpjXL5WrMSBRV0-nAxge3MU9Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+   
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Mesaj gönderildi"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)  
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
